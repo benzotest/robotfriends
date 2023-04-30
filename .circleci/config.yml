@@ -2,13 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/node
+      - image: cimg/node:20.0.0
     steps:
       - checkout
       - run: echo "build"
   build2:
     docker:
-      - image: cimg/node
+      - image: cimg/node:20.0.0
     steps:
       - checkout
       - run: echo "build2"
