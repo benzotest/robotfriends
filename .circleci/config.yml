@@ -13,11 +13,11 @@ jobs:
       - image: cimg/node:20.0.0
     steps:
       - checkout
-      - run: echo "npm installing"
+      - run: echo "npm buolding"
       - run: npm install
       - run: echo "npm install success"
-      - run: npm start
-      - run: echo "npm started"
+      - run: npm build
+      - run: echo "npm builded"
   useless:
     docker:
       - image: cimg/node:20.0.0
@@ -29,9 +29,9 @@ workflows:
     install_start:
       jobs:
         - install
-        - start
+        - build
         - useless:
             requires:
-              - start
+              - build
 
 
