@@ -23,7 +23,7 @@ jobs:
       - image: cimg/node:20.0.0
     steps:
       - checkout
-      - echo "hello"
+      - run: echo "hello"
 workflows:
     version: 2
     install_start:
