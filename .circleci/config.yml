@@ -1,14 +1,14 @@
 version: 2
 jobs:
   build:
-    orbs:
-      - node: circleci/node@5.0.2
+    docker:
+      - image: cimg/base:stable
     steps:
       - checkout
       - run: echo "build"
   build2:
-    orbs:
-      - node: circleci/node@5.0.2
+    docker:
+      - image: cimg/base:stable
     steps:
       - checkout
       - run: echo "build2"
