@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run: echo "build working"
+  build2:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run: echo "build2"
+workflows:
+  version: 2
+  workflow1:
+    jobs:
+      - jobs
