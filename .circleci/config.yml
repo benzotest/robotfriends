@@ -8,7 +8,7 @@ jobs:
       - run: echo "npm installing"
       - run: npm install
       - run: echo "npm install success"
-  start:
+  build:
     docker:
       - image: cimg/node:20.0.0
     steps:
