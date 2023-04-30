@@ -29,7 +29,7 @@ workflows:
     install_start:
       jobs:
         - install
-        - useless
+        - build
         - useless:
             requires:
               - build
