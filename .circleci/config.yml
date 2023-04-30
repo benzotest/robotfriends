@@ -2,13 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/node
     steps:
       - checkout
       - run: echo "build"
   build2:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/node
     steps:
       - checkout
       - run: echo "build2"
