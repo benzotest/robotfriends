@@ -12,8 +12,3 @@ jobs:
     steps:
       - checkout
       - run: echo "build2"
-workflows:
-  version: 2
-  workflow1:
-    jobs:
-      - jobs
