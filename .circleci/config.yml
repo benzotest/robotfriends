@@ -1,14 +1,14 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: circleci/node
+    orbs:
+      node: circleci/node@5.0.2
     steps:
       - checkout
       - run: echo "build"
   build2:
-    docker:
-      - image: circleci/node
+    orbs:
+      node: circleci/node@5.0.2
     steps:
       - checkout
       - run: echo "build2"
